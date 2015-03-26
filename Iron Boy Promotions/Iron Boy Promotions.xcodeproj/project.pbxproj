@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		177501D31AC395FD00ACECBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 177501D21AC395FD00ACECBA /* main.m */; };
+		177501D61AC395FD00ACECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 177501D51AC395FD00ACECBA /* AppDelegate.m */; };
+		177501DE1AC395FD00ACECBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177501DD1AC395FD00ACECBA /* Images.xcassets */; };
+		177501ED1AC395FD00ACECBA /* Iron_Boy_PromotionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 177501EC1AC395FD00ACECBA /* Iron_Boy_PromotionsTests.m */; };
+		1775020A1AC3975200ACECBA /* NL_AdCustomParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 177501F91AC3975200ACECBA /* NL_AdCustomParams.m */; };
+		1775020B1AC3975200ACECBA /* NL_Devices.m in Sources */ = {isa = PBXBuildFile; fileRef = 177501FB1AC3975200ACECBA /* NL_Devices.m */; };
+		1775020C1AC3975200ACECBA /* NL_Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 177501FD1AC3975200ACECBA /* NL_Events.m */; };
+		1775020D1AC3975200ACECBA /* NL_Follow.m in Sources */ = {isa = PBXBuildFile; fileRef = 177501FF1AC3975200ACECBA /* NL_Follow.m */; };
+		1775020E1AC3975200ACECBA /* NL_Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 177502011AC3975200ACECBA /* NL_Picture.m */; };
+		1775020F1AC3975200ACECBA /* NL_PlanInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 177502031AC3975200ACECBA /* NL_PlanInfo.m */; };
+		177502101AC3975200ACECBA /* NL_Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 177502051AC3975200ACECBA /* NL_Account.m */; };
+		177502111AC3975200ACECBA /* NL_Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 177502091AC3975200ACECBA /* NL_Event.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		177501E71AC395FD00ACECBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177501C51AC395FC00ACECBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177501CC1AC395FC00ACECBA;
+			remoteInfo = "Iron Boy Promotions";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		177501CD1AC395FC00ACECBA /* Iron Boy Promotions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Iron Boy Promotions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		177501D11AC395FD00ACECBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177501D21AC395FD00ACECBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		177501D41AC395FD00ACECBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		177501D51AC395FD00ACECBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		177501DD1AC395FD00ACECBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		177501E61AC395FD00ACECBA /* Iron Boy PromotionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Iron Boy PromotionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		177501EB1AC395FD00ACECBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177501EC1AC395FD00ACECBA /* Iron_Boy_PromotionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Iron_Boy_PromotionsTests.m; sourceTree = "<group>"; };
+		177501F81AC3975200ACECBA /* NL_AdCustomParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_AdCustomParams.h; sourceTree = "<group>"; };
+		177501F91AC3975200ACECBA /* NL_AdCustomParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NL_AdCustomParams.m; sourceTree = "<group>"; };
+		177501FA1AC3975200ACECBA /* NL_Devices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_Devices.h; sourceTree = "<group>"; };
+		177501FB1AC3975200ACECBA /* NL_Devices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NL_Devices.m; sourceTree = "<group>"; };
+		177501FC1AC3975200ACECBA /* NL_Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_Events.h; sourceTree = "<group>"; };
+		177501FD1AC3975200ACECBA /* NL_Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NL_Events.m; sourceTree = "<group>"; };
+		177501FE1AC3975200ACECBA /* NL_Follow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_Follow.h; sourceTree = "<group>"; };
+		177501FF1AC3975200ACECBA /* NL_Follow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NL_Follow.m; sourceTree = "<group>"; };
+		177502001AC3975200ACECBA /* NL_Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_Picture.h; sourceTree = "<group>"; };
+		177502011AC3975200ACECBA /* NL_Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NL_Picture.m; sourceTree = "<group>"; };
+		177502021AC3975200ACECBA /* NL_PlanInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_PlanInfo.h; sourceTree = "<group>"; };
+		177502031AC3975200ACECBA /* NL_PlanInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NL_PlanInfo.m; sourceTree = "<group>"; };
+		177502041AC3975200ACECBA /* NL_Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_Account.h; sourceTree = "<group>"; };
+		177502051AC3975200ACECBA /* NL_Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NL_Account.m; sourceTree = "<group>"; };
+		177502061AC3975200ACECBA /* NL_API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_API.h; sourceTree = "<group>"; };
+		177502071AC3975200ACECBA /* NL_Endpoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_Endpoints.h; sourceTree = "<group>"; };
+		177502081AC3975200ACECBA /* NL_Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_Event.h; sourceTree = "<group>"; };
+		177502091AC3975200ACECBA /* NL_Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NL_Event.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		177501CA1AC395FC00ACECBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177501E31AC395FD00ACECBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		177501C41AC395FC00ACECBA = {
+			isa = PBXGroup;
+			children = (
+				177501CF1AC395FC00ACECBA /* Iron Boy Promotions */,
+				177501E91AC395FD00ACECBA /* Iron Boy PromotionsTests */,
+				177501CE1AC395FC00ACECBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		177501CE1AC395FC00ACECBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				177501CD1AC395FC00ACECBA /* Iron Boy Promotions.app */,
+				177501E61AC395FD00ACECBA /* Iron Boy PromotionsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		177501CF1AC395FC00ACECBA /* Iron Boy Promotions */ = {
+			isa = PBXGroup;
+			children = (
+				177501D41AC395FD00ACECBA /* AppDelegate.h */,
+				177501D51AC395FD00ACECBA /* AppDelegate.m */,
+				177501DD1AC395FD00ACECBA /* Images.xcassets */,
+				177501D01AC395FC00ACECBA /* Supporting Files */,
+			);
+			path = "Iron Boy Promotions";
+			sourceTree = "<group>";
+		};
+		177501D01AC395FC00ACECBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				177501F61AC3975200ACECBA /* NL_API */,
+				177501D11AC395FD00ACECBA /* Info.plist */,
+				177501D21AC395FD00ACECBA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		177501E91AC395FD00ACECBA /* Iron Boy PromotionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				177501EC1AC395FD00ACECBA /* Iron_Boy_PromotionsTests.m */,
+				177501EA1AC395FD00ACECBA /* Supporting Files */,
+			);
+			path = "Iron Boy PromotionsTests";
+			sourceTree = "<group>";
+		};
+		177501EA1AC395FD00ACECBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				177501EB1AC395FD00ACECBA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		177501F61AC3975200ACECBA /* NL_API */ = {
+			isa = PBXGroup;
+			children = (
+				177501F71AC3975200ACECBA /* Custom Property Subclasses */,
+				177502041AC3975200ACECBA /* NL_Account.h */,
+				177502051AC3975200ACECBA /* NL_Account.m */,
+				177502061AC3975200ACECBA /* NL_API.h */,
+				177502071AC3975200ACECBA /* NL_Endpoints.h */,
+				177502081AC3975200ACECBA /* NL_Event.h */,
+				177502091AC3975200ACECBA /* NL_Event.m */,
+			);
+			name = NL_API;
+			path = "../../../iOS-New-Livestream-API/API Explorer/API Explorer/NL_API";
+			sourceTree = "<group>";
+		};
+		177501F71AC3975200ACECBA /* Custom Property Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				177501F81AC3975200ACECBA /* NL_AdCustomParams.h */,
+				177501F91AC3975200ACECBA /* NL_AdCustomParams.m */,
+				177501FA1AC3975200ACECBA /* NL_Devices.h */,
+				177501FB1AC3975200ACECBA /* NL_Devices.m */,
+				177501FC1AC3975200ACECBA /* NL_Events.h */,
+				177501FD1AC3975200ACECBA /* NL_Events.m */,
+				177501FE1AC3975200ACECBA /* NL_Follow.h */,
+				177501FF1AC3975200ACECBA /* NL_Follow.m */,
+				177502001AC3975200ACECBA /* NL_Picture.h */,
+				177502011AC3975200ACECBA /* NL_Picture.m */,
+				177502021AC3975200ACECBA /* NL_PlanInfo.h */,
+				177502031AC3975200ACECBA /* NL_PlanInfo.m */,
+			);
+			path = "Custom Property Subclasses";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		177501CC1AC395FC00ACECBA /* Iron Boy Promotions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177501F01AC395FD00ACECBA /* Build configuration list for PBXNativeTarget "Iron Boy Promotions" */;
+			buildPhases = (
+				177501C91AC395FC00ACECBA /* Sources */,
+				177501CA1AC395FC00ACECBA /* Frameworks */,
+				177501CB1AC395FC00ACECBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Iron Boy Promotions";
+			productName = "Iron Boy Promotions";
+			productReference = 177501CD1AC395FC00ACECBA /* Iron Boy Promotions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		177501E51AC395FD00ACECBA /* Iron Boy PromotionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177501F31AC395FD00ACECBA /* Build configuration list for PBXNativeTarget "Iron Boy PromotionsTests" */;
+			buildPhases = (
+				177501E21AC395FD00ACECBA /* Sources */,
+				177501E31AC395FD00ACECBA /* Frameworks */,
+				177501E41AC395FD00ACECBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				177501E81AC395FD00ACECBA /* PBXTargetDependency */,
+			);
+			name = "Iron Boy PromotionsTests";
+			productName = "Iron Boy PromotionsTests";
+			productReference = 177501E61AC395FD00ACECBA /* Iron Boy PromotionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		177501C51AC395FC00ACECBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Tech Genius";
+				TargetAttributes = {
+					177501CC1AC395FC00ACECBA = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 84PD2967AA;
+					};
+					177501E51AC395FD00ACECBA = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 177501CC1AC395FC00ACECBA;
+					};
+				};
+			};
+			buildConfigurationList = 177501C81AC395FC00ACECBA /* Build configuration list for PBXProject "Iron Boy Promotions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 177501C41AC395FC00ACECBA;
+			productRefGroup = 177501CE1AC395FC00ACECBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				177501CC1AC395FC00ACECBA /* Iron Boy Promotions */,
+				177501E51AC395FD00ACECBA /* Iron Boy PromotionsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		177501CB1AC395FC00ACECBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177501DE1AC395FD00ACECBA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177501E41AC395FD00ACECBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		177501C91AC395FC00ACECBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1775020F1AC3975200ACECBA /* NL_PlanInfo.m in Sources */,
+				177502101AC3975200ACECBA /* NL_Account.m in Sources */,
+				1775020E1AC3975200ACECBA /* NL_Picture.m in Sources */,
+				1775020D1AC3975200ACECBA /* NL_Follow.m in Sources */,
+				177502111AC3975200ACECBA /* NL_Event.m in Sources */,
+				1775020A1AC3975200ACECBA /* NL_AdCustomParams.m in Sources */,
+				177501D61AC395FD00ACECBA /* AppDelegate.m in Sources */,
+				177501D31AC395FD00ACECBA /* main.m in Sources */,
+				1775020C1AC3975200ACECBA /* NL_Events.m in Sources */,
+				1775020B1AC3975200ACECBA /* NL_Devices.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177501E21AC395FD00ACECBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177501ED1AC395FD00ACECBA /* Iron_Boy_PromotionsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		177501E81AC395FD00ACECBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177501CC1AC395FC00ACECBA /* Iron Boy Promotions */;
+			targetProxy = 177501E71AC395FD00ACECBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		177501EE1AC395FD00ACECBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		177501EF1AC395FD00ACECBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		177501F11AC395FD00ACECBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Iron Boy Promotions/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		177501F21AC395FD00ACECBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Iron Boy Promotions/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		177501F41AC395FD00ACECBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Iron Boy PromotionsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Iron Boy Promotions.app/Iron Boy Promotions";
+			};
+			name = Debug;
+		};
+		177501F51AC395FD00ACECBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Iron Boy PromotionsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Iron Boy Promotions.app/Iron Boy Promotions";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		177501C81AC395FC00ACECBA /* Build configuration list for PBXProject "Iron Boy Promotions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177501EE1AC395FD00ACECBA /* Debug */,
+				177501EF1AC395FD00ACECBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177501F01AC395FD00ACECBA /* Build configuration list for PBXNativeTarget "Iron Boy Promotions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177501F11AC395FD00ACECBA /* Debug */,
+				177501F21AC395FD00ACECBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		177501F31AC395FD00ACECBA /* Build configuration list for PBXNativeTarget "Iron Boy PromotionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177501F41AC395FD00ACECBA /* Debug */,
+				177501F51AC395FD00ACECBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 177501C51AC395FC00ACECBA /* Project object */;
+}
