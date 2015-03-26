@@ -19,6 +19,8 @@
 		1775020F1AC3975200ACECBA /* NL_PlanInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 177502031AC3975200ACECBA /* NL_PlanInfo.m */; };
 		177502101AC3975200ACECBA /* NL_Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 177502051AC3975200ACECBA /* NL_Account.m */; };
 		177502111AC3975200ACECBA /* NL_Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 177502091AC3975200ACECBA /* NL_Event.m */; };
+		177502141AC398C800ACECBA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177502121AC398C800ACECBA /* Bolts.framework */; };
+		177502151AC398C800ACECBA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177502131AC398C800ACECBA /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		177502071AC3975200ACECBA /* NL_Endpoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_Endpoints.h; sourceTree = "<group>"; };
 		177502081AC3975200ACECBA /* NL_Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_Event.h; sourceTree = "<group>"; };
 		177502091AC3975200ACECBA /* NL_Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NL_Event.m; sourceTree = "<group>"; };
+		177502121AC398C800ACECBA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		177502131AC398C800ACECBA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177502151AC398C800ACECBA /* Parse.framework in Frameworks */,
+				177502141AC398C800ACECBA /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +117,8 @@
 		177501D01AC395FC00ACECBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				177502121AC398C800ACECBA /* Bolts.framework */,
+				177502131AC398C800ACECBA /* Parse.framework */,
 				177501F61AC3975200ACECBA /* NL_API */,
 				177501D11AC395FD00ACECBA /* Info.plist */,
 				177501D21AC395FD00ACECBA /* main.m */,
@@ -383,6 +391,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Iron",
+					Boy,
+					Promotions,
+				);
 				INFOPLIST_FILE = "Iron Boy Promotions/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,6 +408,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Iron",
+					Boy,
+					Promotions,
+				);
 				INFOPLIST_FILE = "Iron Boy Promotions/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
