@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1706B1D01AE7E73A005C63E5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1706B1CD1AE7E73A005C63E5 /* Bolts.framework */; };
+		1706B1D11AE7E73A005C63E5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1706B1CE1AE7E73A005C63E5 /* Parse.framework */; };
+		1706B1D21AE7E73A005C63E5 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1706B1CF1AE7E73A005C63E5 /* ParseCrashReporting.framework */; };
+		1706B1D41AE7E915005C63E5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1706B1D31AE7E915005C63E5 /* libsqlite3.dylib */; };
+		1706B1D61AE7E97E005C63E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1706B1D51AE7E97E005C63E5 /* AudioToolbox.framework */; };
+		1706B1D81AE7E99D005C63E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1706B1D71AE7E99D005C63E5 /* SystemConfiguration.framework */; };
+		1706B1DB1AE7E9F6005C63E5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1706B1DA1AE7E9F6005C63E5 /* MobileCoreServices.framework */; };
 		177501D31AC395FD00ACECBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 177501D21AC395FD00ACECBA /* main.m */; };
 		177501D61AC395FD00ACECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 177501D51AC395FD00ACECBA /* AppDelegate.m */; };
 		177501DE1AC395FD00ACECBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177501DD1AC395FD00ACECBA /* Images.xcassets */; };
@@ -19,8 +26,7 @@
 		1775020F1AC3975200ACECBA /* NL_PlanInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 177502031AC3975200ACECBA /* NL_PlanInfo.m */; };
 		177502101AC3975200ACECBA /* NL_Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 177502051AC3975200ACECBA /* NL_Account.m */; };
 		177502111AC3975200ACECBA /* NL_Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 177502091AC3975200ACECBA /* NL_Event.m */; };
-		177502141AC398C800ACECBA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177502121AC398C800ACECBA /* Bolts.framework */; };
-		177502151AC398C800ACECBA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177502131AC398C800ACECBA /* Parse.framework */; };
+		1788B9241AD59282006F625F /* FeaturedPosters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1788B9231AD59282006F625F /* FeaturedPosters.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1706B1CD1AE7E73A005C63E5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		1706B1CE1AE7E73A005C63E5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		1706B1CF1AE7E73A005C63E5 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		1706B1D31AE7E915005C63E5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1706B1D51AE7E97E005C63E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1706B1D71AE7E99D005C63E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1706B1DA1AE7E9F6005C63E5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		177501CD1AC395FC00ACECBA /* Iron Boy Promotions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Iron Boy Promotions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		177501D11AC395FD00ACECBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		177501D21AC395FD00ACECBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,8 +74,8 @@
 		177502071AC3975200ACECBA /* NL_Endpoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_Endpoints.h; sourceTree = "<group>"; };
 		177502081AC3975200ACECBA /* NL_Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_Event.h; sourceTree = "<group>"; };
 		177502091AC3975200ACECBA /* NL_Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NL_Event.m; sourceTree = "<group>"; };
-		177502121AC398C800ACECBA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		177502131AC398C800ACECBA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		1788B9221AD59282006F625F /* FeaturedPosters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeaturedPosters.h; path = "Tab Views/FeaturedPosters.h"; sourceTree = "<group>"; };
+		1788B9231AD59282006F625F /* FeaturedPosters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeaturedPosters.m; path = "Tab Views/FeaturedPosters.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +83,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				177502151AC398C800ACECBA /* Parse.framework in Frameworks */,
-				177502141AC398C800ACECBA /* Bolts.framework in Frameworks */,
+				1706B1DB1AE7E9F6005C63E5 /* MobileCoreServices.framework in Frameworks */,
+				1706B1D81AE7E99D005C63E5 /* SystemConfiguration.framework in Frameworks */,
+				1706B1D61AE7E97E005C63E5 /* AudioToolbox.framework in Frameworks */,
+				1706B1D41AE7E915005C63E5 /* libsqlite3.dylib in Frameworks */,
+				1706B1D11AE7E73A005C63E5 /* Parse.framework in Frameworks */,
+				1706B1D21AE7E73A005C63E5 /* ParseCrashReporting.framework in Frameworks */,
+				1706B1D01AE7E73A005C63E5 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +103,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1706B1D91AE7E9AE005C63E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1706B1DA1AE7E9F6005C63E5 /* MobileCoreServices.framework */,
+				1706B1D31AE7E915005C63E5 /* libsqlite3.dylib */,
+				1706B1D71AE7E99D005C63E5 /* SystemConfiguration.framework */,
+				1706B1D51AE7E97E005C63E5 /* AudioToolbox.framework */,
+				1706B1CD1AE7E73A005C63E5 /* Bolts.framework */,
+				1706B1CE1AE7E73A005C63E5 /* Parse.framework */,
+				1706B1CF1AE7E73A005C63E5 /* ParseCrashReporting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		177501C41AC395FC00ACECBA = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +140,7 @@
 			children = (
 				177501D41AC395FD00ACECBA /* AppDelegate.h */,
 				177501D51AC395FD00ACECBA /* AppDelegate.m */,
+				1788B9261AD59290006F625F /* Tab Views */,
 				177501DD1AC395FD00ACECBA /* Images.xcassets */,
 				177501D01AC395FC00ACECBA /* Supporting Files */,
 			);
@@ -117,8 +150,7 @@
 		177501D01AC395FC00ACECBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				177502121AC398C800ACECBA /* Bolts.framework */,
-				177502131AC398C800ACECBA /* Parse.framework */,
+				1706B1D91AE7E9AE005C63E5 /* Frameworks */,
 				177501F61AC3975200ACECBA /* NL_API */,
 				177501D11AC395FD00ACECBA /* Info.plist */,
 				177501D21AC395FD00ACECBA /* main.m */,
@@ -175,6 +207,15 @@
 				177502031AC3975200ACECBA /* NL_PlanInfo.m */,
 			);
 			path = "Custom Property Subclasses";
+			sourceTree = "<group>";
+		};
+		1788B9261AD59290006F625F /* Tab Views */ = {
+			isa = PBXGroup;
+			children = (
+				1788B9221AD59282006F625F /* FeaturedPosters.h */,
+				1788B9231AD59282006F625F /* FeaturedPosters.m */,
+			);
+			name = "Tab Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +323,7 @@
 				1775020D1AC3975200ACECBA /* NL_Follow.m in Sources */,
 				177502111AC3975200ACECBA /* NL_Event.m in Sources */,
 				1775020A1AC3975200ACECBA /* NL_AdCustomParams.m in Sources */,
+				1788B9241AD59282006F625F /* FeaturedPosters.m in Sources */,
 				177501D61AC395FD00ACECBA /* AppDelegate.m in Sources */,
 				177501D31AC395FD00ACECBA /* main.m in Sources */,
 				1775020C1AC3975200ACECBA /* NL_Events.m in Sources */,
@@ -473,6 +515,7 @@
 				177501F21AC395FD00ACECBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		177501F31AC395FD00ACECBA /* Build configuration list for PBXNativeTarget "Iron Boy PromotionsTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +524,7 @@
 				177501F51AC395FD00ACECBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

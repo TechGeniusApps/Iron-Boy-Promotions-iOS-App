@@ -6,7 +6,11 @@
 //  Copyright (c) 2015 Tech Genius. All rights reserved.
 //
 
+#import <Parse/Parse.h>
+
 #import "AppDelegate.h"
+
+#import "FeaturedPosters.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +18,26 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.tintColor = [UIColor redColor];
     // Override point for customization after application launch.
+    
+    [Parse setApplicationId:@"KJfmGKTJvdwcTyMUE4l1iCXGLffWTHUay6IaBEaM" clientKey:@"t6HEa7FTgjJ26FRGxxHdxtJLJLc8NfRHRcKmi3Sk"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.tabBar.barStyle = UIBarStyleBlack;
+    
+    @autoreleasepool {
+        FeaturedPosters *featured = [[FeaturedPosters alloc] init];
+        
+        self.tabBarController.viewControllers = @[featured];
+    }
+    
+    self.window.rootViewController = self.tabBarController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
