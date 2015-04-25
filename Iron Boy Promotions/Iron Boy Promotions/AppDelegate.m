@@ -8,9 +8,10 @@
 
 #import <Parse/Parse.h>
 
-#import "AppDelegate.h"
-
 #import "FeaturedPosters.h"
+#import "VideoList.h"
+
+#import "AppDelegate.h"
 
 @interface AppDelegate ()
 
@@ -31,8 +32,9 @@
     
     @autoreleasepool {
         FeaturedPosters *featured = [[FeaturedPosters alloc] init];
+        VideoList *videoList = [[VideoList alloc] init];
         
-        self.tabBarController.viewControllers = @[featured];
+        self.tabBarController.viewControllers = @[featured, [[UINavigationController alloc] initWithRootViewController:videoList]];
     }
     
     self.window.rootViewController = self.tabBarController;

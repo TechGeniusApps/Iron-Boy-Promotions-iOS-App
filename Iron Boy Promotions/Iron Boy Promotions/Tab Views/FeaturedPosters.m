@@ -24,6 +24,7 @@
     self = [super init];
     if (self) {
         self.title = @"Featured";
+        self.tabBarItem.image = [UIImage imageNamed:@"featuredPosters"];
     }
     return self;
 }
