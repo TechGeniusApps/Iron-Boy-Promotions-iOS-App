@@ -61,6 +61,7 @@
     
     posterScrollerDots = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 37)];
     posterScrollerDots.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    [posterScrollerDots addTarget:self action:@selector(changedPage:) forControlEvents:UIControlEventValueChanged];
     if ([UIVisualEffectView class]) {
         UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
         UIVisualEffectView *blurredEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
@@ -76,7 +77,11 @@
         
         [self.view insertSubview:blurredEffectView aboveSubview:posterScroller];
     } else {
-        
+        UIToolbar *blurBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - self.tabBarController.tabBar.frame.size.height - 37, self.view.frame.size.width, 37)];
+        blurBar.barStyle = UIBarStyleBlack;
+        blurBar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+        [self.view insertSubview:blurBar aboveSubview:posterScroller];
+        [self.view insertSubview:posterScrollerDots aboveSubview:blurBar];
     }
     
     [PFConfig getConfigInBackgroundWithBlock:^(PFConfig *config, NSError *error) {
@@ -114,6 +119,10 @@
     if (scrollView == posterScroller) {
         posterScrollerDots.currentPage = lroundf(scrollView.contentOffset.x / scrollView.frame.size.width);
     }
+}
+
+- (void)changedPage:(UIPageControl *)sender {
+    [posterScroller setContentOffset:CGPointMake(posterScroller.frame.size.width * sender.currentPage, 0) animated:YES];
 }
 
 @end

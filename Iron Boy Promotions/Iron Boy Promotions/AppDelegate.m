@@ -10,6 +10,7 @@
 
 #import "FeaturedPosters.h"
 #import "VideoList.h"
+#import "Fighters.h"
 
 #import "AppDelegate.h"
 
@@ -33,8 +34,9 @@
     @autoreleasepool {
         FeaturedPosters *featured = [[FeaturedPosters alloc] init];
         VideoList *videoList = [[VideoList alloc] init];
+        Fighters *fighters = [[Fighters alloc] init];
         
-        self.tabBarController.viewControllers = @[featured, [[UINavigationController alloc] initWithRootViewController:videoList]];
+        self.tabBarController.viewControllers = @[featured, [[UINavigationController alloc] initWithRootViewController:videoList], [[UINavigationController alloc] initWithRootViewController:fighters]];
     }
     
     self.window.rootViewController = self.tabBarController;

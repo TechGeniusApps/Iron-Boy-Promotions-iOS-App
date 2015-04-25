@@ -14,6 +14,12 @@
 		1706B1DB1AE7E9F6005C63E5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1706B1DA1AE7E9F6005C63E5 /* MobileCoreServices.framework */; };
 		1706B1E01AE7FA15005C63E5 /* VideoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1706B1DF1AE7FA15005C63E5 /* VideoList.m */; };
 		170C518F1AEB223200F23E51 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170C518E1AEB223200F23E51 /* Parse.framework */; };
+		170C51921AEB37C300F23E51 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 170C51911AEB37C300F23E51 /* VideoPlayer.m */; };
+		170C51981AEB3DBC00F23E51 /* NL_EventFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 170C51971AEB3DBC00F23E51 /* NL_EventFeed.m */; };
+		170C519A1AEB713A00F23E51 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170C51991AEB713A00F23E51 /* Default-568h@2x.png */; };
+		170C519C1AEB724D00F23E51 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170C519B1AEB724D00F23E51 /* MediaPlayer.framework */; };
+		170C519F1AEB799100F23E51 /* Fighters.m in Sources */ = {isa = PBXBuildFile; fileRef = 170C519E1AEB799100F23E51 /* Fighters.m */; };
+		170C51A21AEB876B00F23E51 /* FighterStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 170C51A11AEB876B00F23E51 /* FighterStats.m */; };
 		177501D31AC395FD00ACECBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 177501D21AC395FD00ACECBA /* main.m */; };
 		177501D61AC395FD00ACECBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 177501D51AC395FD00ACECBA /* AppDelegate.m */; };
 		177501DE1AC395FD00ACECBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177501DD1AC395FD00ACECBA /* Images.xcassets */; };
@@ -48,6 +54,16 @@
 		1706B1DE1AE7FA15005C63E5 /* VideoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoList.h; path = "Tab Views/VideoList.h"; sourceTree = "<group>"; };
 		1706B1DF1AE7FA15005C63E5 /* VideoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoList.m; path = "Tab Views/VideoList.m"; sourceTree = "<group>"; };
 		170C518E1AEB223200F23E51 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		170C51901AEB37C300F23E51 /* VideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayer.h; sourceTree = "<group>"; };
+		170C51911AEB37C300F23E51 /* VideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayer.m; sourceTree = "<group>"; };
+		170C51961AEB3DBC00F23E51 /* NL_EventFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NL_EventFeed.h; sourceTree = "<group>"; };
+		170C51971AEB3DBC00F23E51 /* NL_EventFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NL_EventFeed.m; sourceTree = "<group>"; };
+		170C51991AEB713A00F23E51 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		170C519B1AEB724D00F23E51 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		170C519D1AEB799100F23E51 /* Fighters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fighters.h; path = "Tab Views/Fighters.h"; sourceTree = "<group>"; };
+		170C519E1AEB799100F23E51 /* Fighters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fighters.m; path = "Tab Views/Fighters.m"; sourceTree = "<group>"; };
+		170C51A01AEB876B00F23E51 /* FighterStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FighterStats.h; sourceTree = "<group>"; };
+		170C51A11AEB876B00F23E51 /* FighterStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FighterStats.m; sourceTree = "<group>"; };
 		177501CD1AC395FC00ACECBA /* Iron Boy Promotions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Iron Boy Promotions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		177501D11AC395FD00ACECBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		177501D21AC395FD00ACECBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				170C519C1AEB724D00F23E51 /* MediaPlayer.framework in Frameworks */,
 				1706B1DB1AE7E9F6005C63E5 /* MobileCoreServices.framework in Frameworks */,
 				1706B1D81AE7E99D005C63E5 /* SystemConfiguration.framework in Frameworks */,
 				1706B1D61AE7E97E005C63E5 /* AudioToolbox.framework in Frameworks */,
@@ -106,6 +123,7 @@
 		1706B1D91AE7E9AE005C63E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				170C519B1AEB724D00F23E51 /* MediaPlayer.framework */,
 				170C518E1AEB223200F23E51 /* Parse.framework */,
 				1706B1DA1AE7E9F6005C63E5 /* MobileCoreServices.framework */,
 				1706B1D31AE7E915005C63E5 /* libsqlite3.dylib */,
@@ -119,6 +137,7 @@
 		177501C41AC395FC00ACECBA = {
 			isa = PBXGroup;
 			children = (
+				170C51991AEB713A00F23E51 /* Default-568h@2x.png */,
 				177501CF1AC395FC00ACECBA /* Iron Boy Promotions */,
 				177501E91AC395FD00ACECBA /* Iron Boy PromotionsTests */,
 				177501CE1AC395FC00ACECBA /* Products */,
@@ -140,6 +159,10 @@
 				177501D41AC395FD00ACECBA /* AppDelegate.h */,
 				177501D51AC395FD00ACECBA /* AppDelegate.m */,
 				1788B9261AD59290006F625F /* Tab Views */,
+				170C51901AEB37C300F23E51 /* VideoPlayer.h */,
+				170C51911AEB37C300F23E51 /* VideoPlayer.m */,
+				170C51A01AEB876B00F23E51 /* FighterStats.h */,
+				170C51A11AEB876B00F23E51 /* FighterStats.m */,
 				177501DD1AC395FD00ACECBA /* Images.xcassets */,
 				177501D01AC395FC00ACECBA /* Supporting Files */,
 			);
@@ -204,6 +227,8 @@
 				177502011AC3975200ACECBA /* NL_Picture.m */,
 				177502021AC3975200ACECBA /* NL_PlanInfo.h */,
 				177502031AC3975200ACECBA /* NL_PlanInfo.m */,
+				170C51961AEB3DBC00F23E51 /* NL_EventFeed.h */,
+				170C51971AEB3DBC00F23E51 /* NL_EventFeed.m */,
 			);
 			path = "Custom Property Subclasses";
 			sourceTree = "<group>";
@@ -215,6 +240,8 @@
 				1788B9231AD59282006F625F /* FeaturedPosters.m */,
 				1706B1DE1AE7FA15005C63E5 /* VideoList.h */,
 				1706B1DF1AE7FA15005C63E5 /* VideoList.m */,
+				170C519D1AEB799100F23E51 /* Fighters.h */,
+				170C519E1AEB799100F23E51 /* Fighters.m */,
 			);
 			name = "Tab Views";
 			sourceTree = "<group>";
@@ -301,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				177501DE1AC395FD00ACECBA /* Images.xcassets in Resources */,
+				170C519A1AEB713A00F23E51 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +347,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1775020F1AC3975200ACECBA /* NL_PlanInfo.m in Sources */,
+				170C51A21AEB876B00F23E51 /* FighterStats.m in Sources */,
+				170C519F1AEB799100F23E51 /* Fighters.m in Sources */,
 				1706B1E01AE7FA15005C63E5 /* VideoList.m in Sources */,
 				177502101AC3975200ACECBA /* NL_Account.m in Sources */,
 				1775020E1AC3975200ACECBA /* NL_Picture.m in Sources */,
@@ -326,9 +356,11 @@
 				177502111AC3975200ACECBA /* NL_Event.m in Sources */,
 				1775020A1AC3975200ACECBA /* NL_AdCustomParams.m in Sources */,
 				1788B9241AD59282006F625F /* FeaturedPosters.m in Sources */,
+				170C51981AEB3DBC00F23E51 /* NL_EventFeed.m in Sources */,
 				177501D61AC395FD00ACECBA /* AppDelegate.m in Sources */,
 				177501D31AC395FD00ACECBA /* main.m in Sources */,
 				1775020C1AC3975200ACECBA /* NL_Events.m in Sources */,
+				170C51921AEB37C300F23E51 /* VideoPlayer.m in Sources */,
 				1775020B1AC3975200ACECBA /* NL_Devices.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

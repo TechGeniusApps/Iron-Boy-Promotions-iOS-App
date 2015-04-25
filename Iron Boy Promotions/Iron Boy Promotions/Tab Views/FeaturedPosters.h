@@ -13,4 +13,6 @@
     UIPageControl *posterScrollerDots;
 }
 
+- (void)changedPage:(UIPageControl *)sender;
+
 @end

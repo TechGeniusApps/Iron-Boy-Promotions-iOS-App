@@ -8,6 +8,8 @@
 
 #import "VideoList.h"
 
+#import "VideoPlayer.h"
+
 @interface VideoList ()
 
 @end
@@ -167,6 +169,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    @autoreleasepool {
+        VideoPlayer *player = [[VideoPlayer alloc] init];
+        player.title = [tableView cellForRowAtIndexPath:indexPath].textLabel.text;
+        if (indexPath.section == 0) {
+            player.accountID= [[account.upcoming_events.data[indexPath.row] objectForKey:@"owner_account_id"] longValue];
+            player.eventID = [[account.upcoming_events.data[indexPath.row] objectForKey:@"id"] longValue];
+        } else {
+            player.accountID= [[account.past_events.data[indexPath.row] objectForKey:@"owner_account_id"] longValue];
+            player.eventID = [[account.past_events.data[indexPath.row] objectForKey:@"id"] longValue];
+        }
+        [self.navigationController pushViewController:player animated:YES];
+    }
 }
 
 @end
