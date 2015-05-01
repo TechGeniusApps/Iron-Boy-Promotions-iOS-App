@@ -40,7 +40,7 @@
     posterScroller.pagingEnabled = YES;
     posterScroller.showsHorizontalScrollIndicator = NO;
     posterScroller.showsVerticalScrollIndicator = NO;
-    [self.view addSubview:posterScroller];
+    // [self.view addSubview:posterScroller];
     
     if ([UIVisualEffectView class]) {
         @autoreleasepool {
@@ -73,7 +73,7 @@
         [vibrancyView setFrame:posterScrollerDots.frame];
         
         [blurredEffectView.contentView addSubview:vibrancyView];
-        [vibrancyView.contentView addSubview:posterScrollerDots];
+        // [vibrancyView.contentView addSubview:posterScrollerDots];
         
         [self.view insertSubview:blurredEffectView aboveSubview:posterScroller];
     } else {
