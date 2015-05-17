@@ -26,6 +26,18 @@
     // Override point for customization after application launch.
     
     [Parse setApplicationId:@"KJfmGKTJvdwcTyMUE4l1iCXGLffWTHUay6IaBEaM" clientKey:@"t6HEa7FTgjJ26FRGxxHdxtJLJLc8NfRHRcKmi3Sk"];
+    // Register for Push Notitications
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound);
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes categories:nil];
+        [application registerUserNotificationSettings:settings];
+        [application registerForRemoteNotifications];
+    } else {
+        [application registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+    }
+    if (application.applicationIconBadgeNumber > 0) {
+        application.applicationIconBadgeNumber = 0;
+    }
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     self.tabBarController = [[UITabBarController alloc] init];
@@ -43,6 +55,17 @@
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
 }
 
 @end
