@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1706B1D01AE7E73A005C63E5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1706B1CD1AE7E73A005C63E5 /* Bolts.framework */; };
 		1706B1D41AE7E915005C63E5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1706B1D31AE7E915005C63E5 /* libsqlite3.dylib */; };
 		1706B1D61AE7E97E005C63E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1706B1D51AE7E97E005C63E5 /* AudioToolbox.framework */; };
 		1706B1D81AE7E99D005C63E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1706B1D71AE7E99D005C63E5 /* SystemConfiguration.framework */; };
@@ -18,7 +17,6 @@
 		170C519C1AEB724D00F23E51 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170C519B1AEB724D00F23E51 /* MediaPlayer.framework */; };
 		170C519F1AEB799100F23E51 /* Fighters.m in Sources */ = {isa = PBXBuildFile; fileRef = 170C519E1AEB799100F23E51 /* Fighters.m */; };
 		170C51A21AEB876B00F23E51 /* FighterStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 170C51A11AEB876B00F23E51 /* FighterStats.m */; };
-		170FC6D81AF2F7BC005F997B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170FC6D71AF2F7BC005F997B /* Parse.framework */; };
 		170FC6DB1AF2F8E4005F997B /* AppIcon60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 170FC6D91AF2F8E4005F997B /* AppIcon60x60.png */; };
 		170FC6DC1AF2F8E4005F997B /* AppIcon120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 170FC6DA1AF2F8E4005F997B /* AppIcon120x120.png */; };
 		177501D31AC395FD00ACECBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 177501D21AC395FD00ACECBA /* main.m */; };
@@ -34,6 +32,8 @@
 		177502101AC3975200ACECBA /* NL_Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 177502051AC3975200ACECBA /* NL_Account.m */; };
 		177502111AC3975200ACECBA /* NL_Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 177502091AC3975200ACECBA /* NL_Event.m */; };
 		1788B9241AD59282006F625F /* FeaturedPosters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1788B9231AD59282006F625F /* FeaturedPosters.m */; };
+		17BCECEB1B0904020075FF2F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BCECEA1B0904020075FF2F /* Parse.framework */; };
+		17D0339D1B08FD1700DB0CBB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D0339B1B08FD1700DB0CBB /* Bolts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1706B1CD1AE7E73A005C63E5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		1706B1D31AE7E915005C63E5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1706B1D51AE7E97E005C63E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1706B1D71AE7E99D005C63E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -63,7 +62,6 @@
 		170C519E1AEB799100F23E51 /* Fighters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fighters.m; path = "Tab Views/Fighters.m"; sourceTree = "<group>"; };
 		170C51A01AEB876B00F23E51 /* FighterStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FighterStats.h; sourceTree = "<group>"; };
 		170C51A11AEB876B00F23E51 /* FighterStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FighterStats.m; sourceTree = "<group>"; };
-		170FC6D71AF2F7BC005F997B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		170FC6D91AF2F8E4005F997B /* AppIcon60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon60x60.png; sourceTree = "<group>"; };
 		170FC6DA1AF2F8E4005F997B /* AppIcon120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon120x120.png; sourceTree = "<group>"; };
 		177501CD1AC395FC00ACECBA /* Iron Boy Promotions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Iron Boy Promotions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +93,8 @@
 		177502091AC3975200ACECBA /* NL_Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NL_Event.m; sourceTree = "<group>"; };
 		1788B9221AD59282006F625F /* FeaturedPosters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeaturedPosters.h; path = "Tab Views/FeaturedPosters.h"; sourceTree = "<group>"; };
 		1788B9231AD59282006F625F /* FeaturedPosters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeaturedPosters.m; path = "Tab Views/FeaturedPosters.m"; sourceTree = "<group>"; };
+		17BCECEA1B0904020075FF2F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		17D0339B1B08FD1700DB0CBB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +105,10 @@
 				170C519C1AEB724D00F23E51 /* MediaPlayer.framework in Frameworks */,
 				1706B1DB1AE7E9F6005C63E5 /* MobileCoreServices.framework in Frameworks */,
 				1706B1D81AE7E99D005C63E5 /* SystemConfiguration.framework in Frameworks */,
-				170FC6D81AF2F7BC005F997B /* Parse.framework in Frameworks */,
+				17BCECEB1B0904020075FF2F /* Parse.framework in Frameworks */,
+				17D0339D1B08FD1700DB0CBB /* Bolts.framework in Frameworks */,
 				1706B1D61AE7E97E005C63E5 /* AudioToolbox.framework in Frameworks */,
 				1706B1D41AE7E915005C63E5 /* libsqlite3.dylib in Frameworks */,
-				1706B1D01AE7E73A005C63E5 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,13 +125,13 @@
 		1706B1D91AE7E9AE005C63E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				170FC6D71AF2F7BC005F997B /* Parse.framework */,
+				17BCECEA1B0904020075FF2F /* Parse.framework */,
+				17D0339B1B08FD1700DB0CBB /* Bolts.framework */,
 				170C519B1AEB724D00F23E51 /* MediaPlayer.framework */,
 				1706B1DA1AE7E9F6005C63E5 /* MobileCoreServices.framework */,
 				1706B1D31AE7E915005C63E5 /* libsqlite3.dylib */,
 				1706B1D71AE7E99D005C63E5 /* SystemConfiguration.framework */,
 				1706B1D51AE7E97E005C63E5 /* AudioToolbox.framework */,
-				1706B1CD1AE7E73A005C63E5 /* Bolts.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -471,17 +471,13 @@
 		177501F11AC395FD00ACECBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Iron",
-					Boy,
-					Promotions,
-					"$(PROJECT_DIR)/Iron",
-					Boy,
-					Promotions,
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Iron",
 					Boy,
 					Promotions,
@@ -495,18 +491,14 @@
 		177501F21AC395FD00ACECBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Iron",
-					Boy,
-					Promotions,
-					"$(PROJECT_DIR)/Iron",
-					Boy,
-					Promotions,
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Iron",
 					Boy,
 					Promotions,
