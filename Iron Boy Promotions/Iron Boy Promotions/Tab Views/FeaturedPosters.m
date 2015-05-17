@@ -32,9 +32,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    posterScroller = [[UIScrollView alloc] initWithFrame:self.view.frame];
+    posterScroller = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - self.tabBarController.tabBar.frame.size.height - 37)];
     posterScroller.delegate = self;
-    [posterScroller setContentInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    [posterScroller setContentInset:UIEdgeInsetsZero];
     posterScroller.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     posterScroller.contentSize = CGSizeMake(0, posterScroller.frame.size.height);
     posterScroller.pagingEnabled = YES;
@@ -42,6 +42,7 @@
     posterScroller.showsVerticalScrollIndicator = NO;
     [self.view addSubview:posterScroller];
     
+    // Status Bar Blur
     if ([UIVisualEffectView class]) {
         @autoreleasepool {
             UIVisualEffectView *blurredEffectView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleDark]];
@@ -59,30 +60,10 @@
         }
     }
     
-    posterScrollerDots = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 37)];
+    posterScrollerDots = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - self.tabBarController.tabBar.frame.size.height - 37, self.view.frame.size.width, 37)];
     posterScrollerDots.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [posterScrollerDots addTarget:self action:@selector(changedPage:) forControlEvents:UIControlEventValueChanged];
-    if ([UIVisualEffectView class]) {
-        UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
-        UIVisualEffectView *blurredEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-        [blurredEffectView setFrame:CGRectMake(0, self.view.frame.size.height - self.tabBarController.tabBar.frame.size.height - 37, self.view.frame.size.width, 37)];
-        blurredEffectView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
-        
-        UIVisualEffectView *vibrancyView = [[UIVisualEffectView alloc] initWithEffect:[UIVibrancyEffect effectForBlurEffect:blurEffect]];
-        vibrancyView.autoresizingMask = posterScrollerDots.autoresizingMask;
-        [vibrancyView setFrame:posterScrollerDots.frame];
-        
-        [blurredEffectView.contentView addSubview:vibrancyView];
-        [vibrancyView.contentView addSubview:posterScrollerDots];
-        
-        [self.view insertSubview:blurredEffectView aboveSubview:posterScroller];
-    } else {
-        UIToolbar *blurBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - self.tabBarController.tabBar.frame.size.height - 37, self.view.frame.size.width, 37)];
-        blurBar.barStyle = UIBarStyleBlack;
-        blurBar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
-        [self.view insertSubview:blurBar aboveSubview:posterScroller];
-        [self.view insertSubview:posterScrollerDots aboveSubview:blurBar];
-    }
+    [self.view addSubview:posterScrollerDots];
     
     [PFConfig getConfigInBackgroundWithBlock:^(PFConfig *config, NSError *error) {
         if (config && !error) {
@@ -91,7 +72,7 @@
             for (NSString *posterStringURL in featuredPosterURLs) {
                 @autoreleasepool {
                     UIImageView *posterView = [[UIImageView alloc] initWithFrame:CGRectMake(posterScroller.contentSize.width, 0, posterScroller.frame.size.width, posterScroller.frame.size.height)];
-                    posterView.contentMode = UIViewContentModeScaleAspectFill;
+                    posterView.contentMode = UIViewContentModeScaleAspectFit;
                     posterView.clipsToBounds = YES;
                     posterView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
                     posterScroller.contentSize = CGSizeMake(posterScroller.contentSize.width + posterView.frame.size.width, posterScroller.frame.size.height);
